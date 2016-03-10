@@ -1,0 +1,33 @@
+{
+  "name": "Harvest Language Support",
+  "short_name": "Harvest Languages",
+  "author": "Orestes Carracedo (@orestesCA https://orestes.io)",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Simple language support for Harvest (harvestapp.com)",
+  "web_accessible_resources": [
+    "*.json",
+    "*.gif"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.harvestapp.com/invoices/*"
+      ],
+      "css": [
+        "content/styles/style.css"
+      ],
+      "js": [
+        "vendor/lodash.core.min.js",
+        "vendor/zepto.min.js",
+        "vendor/zepto.ajax.js",
+        "script.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "content/images/harvest-16.png",
+    "48": "content/images/harvest-48.png",
+    "128": "content/images/harvest-128.png"
+  }
+}
