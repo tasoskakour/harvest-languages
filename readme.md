@@ -34,7 +34,7 @@ Hacky? You bet. Effective? Damn right. This was done in 3 hours late at night, s
 
 * [en-US] United States English
 * [es-ES] Spanish (Spain)
-* [sv-SV] Svenska/Swedish (Sweden) thanks to @calmh
+* [sv-SV] Svenska/Swedish (Sweden) thanks to [@calmh](https://github.com/calmh)
 
 ## Adding more languages
 
