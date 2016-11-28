@@ -8,5 +8,10 @@
     "locale": "en-US",
     "localeName": "U.S. English",
     "name": "U.S. English"
+  },
+  {
+    "locale": "sv-SE",
+    "localeName": "Svenska",
+    "name": "Swedish"
   }
 ]
