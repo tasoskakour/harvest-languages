@@ -22,7 +22,7 @@ I do not work for Harvest nor am I affiliated with them in any way. This is not 
 
 1. Navigate to the Invoice
 2. Use the language selector to change your translations
-3. Wait for the page to be refresh with the new translations
+3. Wait for the page to be refreshed with the new translations
 
 ## How it works
 
@@ -34,6 +34,7 @@ Hacky? You bet. Effective? Damn right. This was done in 3 hours late at night, s
 
 * [en-US] United States English
 * [es-ES] Spanish (Spain)
+* [sv-SV] Svenska/Swedish (Sweden) thanks to @calmh
 
 ## Adding more languages
 
