@@ -1,0 +1,36 @@
+{
+  "locale": "fr-CH",
+  "localeName": "Francais",
+  "name": "French",
+    "type": "Invoice",
+  "translation": {
+    "profile_t_invoice": "Rechnung", Facture
+    "profile_t_from": "Von", de
+    "profile_t_for": "An",Pour
+    "profile_t_id": "Rechnungsnummer", Numéro de facture
+    "profile_t_po_number": "PO Number", Numéro de commande
+    "profile_t_issue_date": "Rechnungsdatum",Date de la facture
+    "profile_t_due_date": "Fälligkeitsdatum", date d'échéance
+    "profile_t_upon_receipt": "Upon Receipt", Dès réception
+    "profile_t_tax": "MwSt", VAT
+    "profile_t_tax2": "",
+    "profile_t_discount": "Rabatt", Rabais
+    "profile_t_subject": "Betreff", Objet
+    "profile_t_type": "Typ",  type ??
+    "profile_t_description": "Beschreibung", Description
+    "profile_t_quantity": "Anzahl", Quantité
+    "profile_t_unit_price": "Stückpreis", Prix unitaire oder prix par unité
+    "profile_t_amount": "Menge", nombre
+    "profile_t_subtotal": "Subtotal", Sous-total
+    "profile_t_amount_due": "Amount Due", montant dû
+    "profile_t_notes": "Beschreibung", Description
+    "profile_t_page_numbers": "Seite [page] von [toPage]", pade (page) sur (topage)
+    "profile_t_file_attachments": "Anhänge", Pièce jointe
+    "profile_t_payments": "Zahlungen",  paiements
+    "profile_t_retainer_payments": "Retainer Payments", Acompte (ist das eine vorbezahlung/anzahlung? ich kenne nur retainer fee)
+    "profile_t_pay_invoice": "Rechnung bezahlen", payer la facture
+    "profile_t_invoice_link": "Rechnungslink", lien de paiement
+    "profile_t_paid": "Bezahlt", payé
+    "profile_t_pay_pal_paid_message": "Vielen Dank." Merci beaucoup
+  }
+}

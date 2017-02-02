@@ -13,5 +13,13 @@
     "locale": "sv-SE",
     "localeName": "Svenska",
     "name": "Swedish"
+  },{
+    "locale": "de-CH",
+    "localeName": "Deutsch",
+    "name": "German"
+  },{
+    "locale": "fr-CG",
+    "localeName": "Francais",
+    "name": "French"
   }
 ]
