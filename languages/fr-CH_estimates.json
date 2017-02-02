@@ -1,0 +1,34 @@
+{
+  "locale": "fr-CH",
+  "localeName": "Francais",
+  "name": "French",
+    "type": "Estimates",
+  "translation": {
+    "profile_t_estimate":"Offerte", Offre 
+    "profile_t_from":"Von", De
+    "profile_t_for":"Offerte für", Offre pour
+    "profile_t_id":"Offertennummer", Numéro d'offre
+    "profile_t_po_number":"PO Number", Numéro de commande
+    "profile_t_issue_date":"Datum der Offerte", Date de l'offre
+    "profile_t_tax":"MwSt", TVA
+    "profile_t_tax2":"",
+    "profile_t_discount":"Rabatt",Rabais oder Taux de remise 
+    "profile_t_subject":"Objekt", Objet
+    "profile_t_type":"Produkt", Produit
+    "profile_t_description":"Beschreibung", Description
+    "profile_t_quantity":"Anzahl", Quantité
+    "profile_t_unit_price":"", Prix unitaire oder Prix par unité
+    "profile_t_amount":"Betrag", Montant
+    "profile_t_subtotal":"Total", Total
+    "profile_t_amount_due":"Total Offerte", Total de l'offre
+    "profile_t_notes":"Kommentar", Commentaire
+    "profile_t_page_numbers":"Seite [page] von [toPage]", Page (page) sur (topage)
+    "profile_t_file_attachments":"Beilagen",Pièce jointe
+    "profile_t_estimate_link":"Bitte klicken Sie hier, um die Offerte zu akzeptieren.", S'il vous plaît cliquez ici pour accepter l'offre
+    "profile_t_accept_estimate":"Offerte bestätigen", Confirmer l'offre
+    "profile_t_decline_estimate":"Offerte ablehnen", Rejeter l'offre
+    "profile_t_estimate_accepted": "Ich bin der Offerte einverstanden.", Je suis d'accord avec l'offre
+    "profile_t_estimate_declined":"Ich bin mit der Offerte nicht einverstanden.", Je ne suis pas d'accord avec l'offre
+    "profile_t_email_subject":"Offerte #%estimate_id% von %company_name%" Offre de
+  }
+}
