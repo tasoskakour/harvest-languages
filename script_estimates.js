@@ -87,7 +87,7 @@
             document.getElementById(key).value = value;
         });
 
-        document.getElementById('save-translations-button').click();
+        $(document.getElementById("translation_edit")).find("form").submit();
         updated = true;
     }
 
