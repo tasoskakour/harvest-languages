@@ -39,8 +39,8 @@
     }
   ],
   "icons": {
-    "16": "content/images/harvest-16.png",
-    "48": "content/images/harvest-48.png",
-    "128": "content/images/harvest-128.png"
+    "16": "content/images/harvest-languages-16.png",
+    "48": "content/images/harvest-languages-48.png",
+    "128": "content/images/harvest-languages-128.png"
   }
 }
