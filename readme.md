@@ -1,3 +1,5 @@
+<img align="right" width="100" height="100" src="/content/images/harvest-languages-128.png">
+
 # Harvest Languages
 
 [![Analytics](https://ga-beacon.appspot.com/UA-62371785-2/harvest-languages/readme)](https://github.com/igrigorik/ga-beacon)
