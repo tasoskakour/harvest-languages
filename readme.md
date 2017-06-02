@@ -20,6 +20,8 @@ I do not work for Harvest nor am I affiliated with them in any way. This is not 
 
  Install [Harvest Languages at the Chrome Web Store](https://chrome.google.com/webstore/detail/harvest-language-support/khcfohmpggclgonmccicoaaiemjlcffn).
 
+Optionally, hide the button in your browser toolbar by right-clicking it and selecting 'Hide in Chrome menu'. The button does nothing, this extension adds the language selector to Harvest's user interface.
+
 ## Usage
 
 1. Navigate to the Invoice
