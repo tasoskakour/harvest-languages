@@ -21,7 +21,7 @@
         "vendor/lodash.core.min.js",
         "vendor/zepto.min.js",
         "vendor/zepto.ajax.js",
-        "script.js"
+        "harvest-languages.js"
       ]
     },{
       "matches": [
@@ -34,7 +34,7 @@
         "vendor/lodash.core.min.js",
         "vendor/zepto.min.js",
         "vendor/zepto.ajax.js",
-        "script_estimates.js"
+        "harvest-languages.js"
       ]
     }
   ],
