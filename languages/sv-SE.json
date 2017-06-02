@@ -1,8 +1,8 @@
 {
   "locale": "sv-SE",
-  "localeName": "Svenska",
-  "name": "Swedish",
-  "translation": {
+  "localeName": "Svenska (Sverige)",
+  "name": "Swedish (Sweden)",
+  "invoices": {
     "profile_t_invoice": "FAKTURA",
     "profile_t_from": "Avsändare",
     "profile_t_for": "Mottagare",

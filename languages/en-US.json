@@ -1,9 +1,8 @@
 {
   "locale": "en-US",
-  "localeName": "U.S. English",
-  "name": "U.S. English",
-  "type": "Invoice",
-  "translation": {
+  "localeName": "English (United States)",
+  "name": "English (United States)",
+  "invoices": {
     "profile_t_invoice": "Invoice",
     "profile_t_from": "From",
     "profile_t_for": "For",
@@ -32,5 +31,33 @@
     "profile_t_invoice_link": "Invoice Link",
     "profile_t_paid": "Paid",
     "profile_t_pay_pal_paid_message": "Thank you for your payment"
+  },
+  "estimates": {
+    "profile_t_estimate":"Offering",
+    "profile_t_from":"From",
+    "profile_t_for":"For",
+    "profile_t_id": "Invoice ID",
+    "profile_t_po_number": "PO Number",
+    "profile_t_issue_date": "Issue Date",
+    "profile_t_tax": "V.A.T.",
+    "profile_t_tax2": "",
+    "profile_t_discount": "Discount",
+    "profile_t_subject": "Subject",
+    "profile_t_type": "Item Type",
+    "profile_t_description": "Description",
+    "profile_t_quantity": "Quantity",
+    "profile_t_unit_price": "Unit Price",
+    "profile_t_amount": "Amount",
+    "profile_t_subtotal": "Subtotal",
+    "profile_t_amount_due": "Amount Due",
+    "profile_t_notes": "Notes",
+    "profile_t_page_numbers": "Page [page] of [toPage]",
+    "profile_t_file_attachments": "File attachments",
+    "profile_t_estimate_link":"Click here to accept the estimate.",
+    "profile_t_accept_estimate":"Accept estimate",
+    "profile_t_decline_estimate":"Decline estimate",
+    "profile_t_estimate_accepted": "I accept the estimate.",
+    "profile_t_estimate_declined":"I do not accept the estimate.",
+    "profile_t_email_subject":"Estimate #%estimate_id% from %company_name%"
   }
 }

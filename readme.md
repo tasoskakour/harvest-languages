@@ -32,9 +32,11 @@ Hacky? You bet. Effective? Damn right. This was done in 3 hours late at night, s
 
 ## Supported languages
 
-* [en-US] United States English
-* [es-ES] Spanish (Spain)
-* [sv-SV] Svenska/Swedish (Sweden) thanks to [@calmh](https://github.com/calmh)
+* [en-US] English (United States)
+* [fr-CH] Française - French (Switzerland) thanks to [@mr-deamon](https://github.com/mr-deamon)
+* [de-CH] Deutsche - German (Switzerland) thanks to [@mr-deamon](https://github.com/mr-deamon)
+* [es-ES] Español - Spanish (Spain)
+* [sv-SE] Svenska - Swedish (Sweden) thanks to [@calmh](https://github.com/calmh)
 
 ## Adding more languages
 
