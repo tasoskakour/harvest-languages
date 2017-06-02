@@ -1,17 +1,25 @@
 [
-  {
-    "locale": "es-ES",
-    "localeName": "Español (España)",
-    "name": "Spanish (Spain)"
-  },
-  {
-    "locale": "en-US",
-    "localeName": "U.S. English",
-    "name": "U.S. English"
-  },
-  {
-    "locale": "sv-SE",
-    "localeName": "Svenska",
-    "name": "Swedish"
+    {
+        "locale": "es-ES"
+        , "localeName": "Español (España)"
+        , "name": "Spanish (Spain)"
+  }
+    , {
+        "locale": "en-US"
+        , "localeName": "U.S. English"
+        , "name": "U.S. English"
+  }
+    , {
+        "locale": "sv-SE"
+        , "localeName": "Svenska"
+        , "name": "Swedish"
+  }, {
+        "locale": "de-CH"
+        , "localeName": "Deutsch"
+        , "name": "German"
+  }, {
+        "locale": "fr-CH"
+        , "localeName": "Francais"
+        , "name": "French"
   }
 ]
