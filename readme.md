@@ -12,9 +12,9 @@ The result is this Google Chrome extension. You get a language selector that cha
 
 I do not work for Harvest nor am I affiliated with them in any way. This is not an officially supported solution, just a hack.
 
-## In action
+## Demo
 
-[![Harvest Languages in action](/content//harvest-languages-in-action.gif)](http://www.youtube.com/watch?v=yf-_BjTsKxc)
+[![Harvest Languages in action](/content/harvest-languages-in-action.gif)](http://www.youtube.com/watch?v=yf-_BjTsKxc)
 
 ## Installation
 
