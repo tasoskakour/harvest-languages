@@ -31,7 +31,7 @@
     }
 
     function addEventListeners(select) {
-        select.addEventListener('change', changeLanguage);
+        select.on('change', changeLanguage);
     }
 
     function appendSelect(select) {
@@ -39,21 +39,18 @@
     }
 
     function getSpinner() {
-        return spinner = $('<img class="spinner" src="' + chrome.extension.getURL('/content/images/spinner.gif') + '">')
+        return spinner = $('<img id="harvest-language-loading" ' +
+                           'src="' + chrome.extension.getURL('/content/images/spinner.gif') + '">')
             .hide();
-    }
-
-    function appendSpinner(loader) {
-        $('.invoice-action-buttons').prepend(loader);
     }
 
     function insertUIElements(languages) {
         var select = getSelect(languages);
         var spinner = getSpinner();
+        var wrapper = getSelectWrapper(spinner, select);
 
         addEventListeners(select);
-        appendSelect(select);
-        appendSpinner(spinner);
+        appendSelect(wrapper);
     }
 
     function displayReadyMessage(manifest) {
@@ -61,11 +58,21 @@
     }
 
     function addOption(select, value, label) {
-        $(select).append('<option value="' + value + '">' + label + '</option>');
+        select.append('<option value="' + value + '">' + label + '</option>');
+    }
+
+    function getSelectWrapper(spinner, select) {
+        var wrapper = $('<span ' +
+        'title="Change language" ' +
+        'id="harvest-language-selector" ' +
+        'class="btn-action btn-pill btn-invoice-action" ' +
+        '></span>');
+
+        return wrapper.append(spinner).append(select);
     }
 
     function getSelect(languages) {
-        select = document.createElement('select');
+        select = $('<select>');
         addOption(select, '*', 'Language');
 
         languages.forEach(function(language) {
@@ -79,13 +86,21 @@
         return $('<iframe src="' + url + '"></iframe>').hide().get()[0];
     }
 
-    function getTranslationSettingsUrl() {
-        return 'https://' + location.hostname + '/invoices/configure#translation_edit';
+    function getTranslationSettingsUrl(section) {
+        return 'https://' + location.hostname + '/' + section + '/configure?tab=translations';
     }
 
-    function changeValues(document, language, submit) {
-        _.forEach(language.translation, function(value, key) {
-            document.getElementById(key).value = value;
+    function changeValues(section, document, language) {
+        _.forEach(language[section], function (value, key) {
+            var field = document.getElementById(key)
+
+            if (!field) {
+                return console.warn('Could not find field for translation. ' +
+                    'Is this module enabled in your Harvest settings?. ' +
+                    'Field:', key, 'Translation:', value);
+            }
+
+            field.value = value;
         });
 
         $(document.getElementById("translation_edit")).find("form").submit();
@@ -93,67 +108,57 @@
     }
 
     function getSelectedLocale() {
-        return select.options[select.selectedIndex].value;
-    }
-
-    function findObject(iframe, id, interval, retries) {
-        var _interval, count = 0;
-        return new Promise(function(resolve, reject) {
-            function retry() {
-                count++;
-                var element = iframe.contentDocument.getElementById(id);
-                if (element || count >= retries) {
-                    clearInterval(_interval);
-                }
-
-                if (element) {
-                    return resolve(element);
-                }
-
-                if (count >= retries) {
-                    debugger;
-                    return reject();
-                }
-            }
-
-            _interval = setInterval(retry, interval);
-        });
-    }
-
-    function addIframeListeners(iframe, language) {
-        iframe.addEventListener('load', function() {
-            iframeLoaded(iframe, language)
-        });
+        return select.val();
     }
 
     function attachIframe(iframe) {
         $(document.body).append(iframe);
     }
 
-    function createIframe() {
-        var url = getTranslationSettingsUrl();
-        return getIframe(url);
-    }
-
-    function iframeLoaded(iframe, language) {
+    function iframeLoaded(iframe, section, language, resolve) {
         if (!updated) {
-            return changeValues(iframe.contentDocument, language);
+            return changeValues(section, iframe.contentDocument, language);
         }
 
-        // We're done
-        location.reload();
+        // When the iframe fires this event for the second time it does because of the form submit being done
+        resolve();
     }
 
     function changeLanguage() {
         $(spinner).show();
+        select.hide();
 
-        var locale = getSelectedLocale();
-        loadLanguage(locale)
-            .then(function(language) {
-                var iframe = createIframe();
-                addIframeListeners(iframe, language);
-                attachIframe(iframe); // Kicks-off url loading
-            });
+        loadLanguage(getSelectedLocale()).then(translateInPlace);
+    }
+
+    function getTranslationIframe(url, section, language, resolve) {
+        var iframe = getIframe(url);
+        iframe.addEventListener('load', function () {
+            iframeLoaded(iframe, section, language, resolve)
+        });
+
+        return iframe;
+    }
+
+    function translate(section, language) {
+        return new Promise(function (resolve, reject) {
+            var url    = getTranslationSettingsUrl(section);
+            var iframe = getTranslationIframe(url, section, language, resolve);
+
+            attachIframe(iframe); // Kicks-off url loading
+        });
+    }
+
+    function translateInPlace(language) {
+        // /invoices/1234567 -> invoices
+        // /estimates/1234567 -> estimates
+        var section = location.pathname.match(/[^/]+/)[0];
+
+        translate(section, language)
+            .then(function () {
+                // We're done
+                location.reload();
+            })
     }
 
 })(Zepto);
