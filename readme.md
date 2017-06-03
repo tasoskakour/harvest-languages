@@ -8,6 +8,14 @@ I love Harvest, but they're missing something  I need: multi-language invoices. 
 
 The result is this Google Chrome extension. You get a language selector that changes the translations and then reloads the invoice page for you.
 
+# What's new in 1.0
+
+- First stable version
+- Works with the new Harvest UI/URLs
+- Improved UI integration
+- Added support for *Estimates* translations
+- Added support for optional fields available through specific Harvest modules
+
 ## Disclaimer
 
 I do not work for Harvest nor am I affiliated with them in any way. This is not an officially supported solution, just a hack.
