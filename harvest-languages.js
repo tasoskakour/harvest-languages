@@ -63,10 +63,10 @@
 
     function getSelectWrapper(spinner, select) {
         var wrapper = $('<span ' +
-        'title="Change language" ' +
-        'id="harvest-language-selector" ' +
-        'class="btn-action btn-pill btn-invoice-action" ' +
-        '></span>');
+            'title="Change language" ' +
+            'id="harvest-language-selector" ' +
+            'class="btn-action btn-pill btn-invoice-action" ' +
+            '></span>');
 
         return wrapper.append(spinner).append(select);
     }
