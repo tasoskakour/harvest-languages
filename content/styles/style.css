@@ -1,4 +1,19 @@
-img.spinner {
+#harvest-language-loading {
     height: 20px;
     margin: 0 20px;
+}
+
+#harvest-language-selector {
+    position: absolute;
+    margin-top: 50px;
+    max-width: 220px;
+    text-align: center;
+}
+
+#harvest-language-selector select {
+    max-width: 100%;
+}
+
+#invoice_header {
+    margin: 0 0 50px 0 !important;
 }
