@@ -1,25 +1,27 @@
 [
-    {
-        "locale": "es-ES"
-        , "localeName": "Español (España)"
-        , "name": "Spanish (Spain)"
-  }
-    , {
-        "locale": "en-US"
-        , "localeName": "U.S. English"
-        , "name": "U.S. English"
-  }
-    , {
-        "locale": "sv-SE"
-        , "localeName": "Svenska"
-        , "name": "Swedish"
-  }, {
-        "locale": "de-CH"
-        , "localeName": "Deutsch"
-        , "name": "German"
-  }, {
-        "locale": "fr-CH"
-        , "localeName": "Francais"
-        , "name": "French"
+  {
+    "locale": "es-ES",
+    "localeName": "Español (España)",
+    "name": "Spanish (Spain)"
+  },
+  {
+    "locale": "en-US",
+    "localeName": "English (United States)",
+    "name": "English (United States)"
+  },
+  {
+    "locale": "sv-SE",
+    "localeName": "Svenska (Sverige)",
+    "name": "Swedish (Sweden)"
+  },
+  {
+    "locale": "de-CH",
+    "localeName": "Deutsche (Schweiz)",
+    "name": "German (Switzerland)"
+  },
+  {
+    "locale": "fr-CH",
+    "localeName": "Francais (Suisse)",
+    "name": "French (Switchzerland)"
   }
 ]
