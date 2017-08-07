@@ -22,7 +22,7 @@ I do not work for Harvest nor am I affiliated with them in any way. This is not 
 
 ## Demo
 
-[![Harvest Languages in action](/content/harvest-languages-in-action.gif)](http://www.youtube.com/watch?v=yf-_BjTsKxc)
+[![Harvest Languages in action](/demo.gif)](http://www.youtube.com/watch?v=yf-_BjTsKxc)
 
 ## Installation
 
