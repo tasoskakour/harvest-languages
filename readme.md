@@ -1,4 +1,4 @@
-<img align="right" width="100" height="100" src="/content/images/harvest-languages-128.png">
+<img align="right" width="100" height="100" src="/src/content/images/harvest-languages-128.png">
 
 # Harvest Languages
 
