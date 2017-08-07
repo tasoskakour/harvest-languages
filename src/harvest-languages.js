@@ -3,6 +3,9 @@
 
     var select, spinner, updated;
 
+    // This changes every once in a while
+    var selector = '#invoice_header > div.grid1of3.text-right'
+
     init();
 
     ///
@@ -35,7 +38,7 @@
     }
 
     function appendSelect(select) {
-        $('.invoice-action-buttons').prepend(select);
+        $(selector).prepend(select);
     }
 
     function getSpinner() {
