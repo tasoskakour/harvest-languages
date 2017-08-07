@@ -14,12 +14,12 @@
         loadLanguages()
             .then(insertUIElements)
             .catch(function(e) {
-                console.warn('Harvest Languages error', e);
+                console.warn(manifest.name, manifest.version, e);
             });
         loadManifest()
             .then(displayReadyMessage)
             .catch(function(e) {
-                console.warn('Harvest Languages error', e);
+                console.warn(manifest.name, manifest.version, e);
             });
     }
 
@@ -46,7 +46,13 @@
     }
 
     function appendSelect(select) {
-        $(selector).prepend(select);
+        var target = $(selector);
+
+        if (target.length !== 1) {
+            throw new Error('Cannot attach UI elements');
+        }
+
+        target.prepend(select);
     }
 
     function getSpinner() {
