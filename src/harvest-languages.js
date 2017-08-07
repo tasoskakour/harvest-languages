@@ -11,8 +11,16 @@
     ///
 
     function init() {
-        loadLanguages().then(insertUIElements);
-        loadManifest().then(displayReadyMessage);
+        loadLanguages()
+            .then(insertUIElements)
+            .catch(function(e) {
+                console.warn('Harvest Languages error', e);
+            });
+        loadManifest()
+            .then(displayReadyMessage)
+            .catch(function(e) {
+                console.warn('Harvest Languages error', e);
+            });
     }
 
     function loadManifest() {
