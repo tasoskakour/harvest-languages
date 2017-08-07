@@ -1,7 +1,7 @@
 (function($) {
     'use strict';
 
-    var select, spinner, updated;
+    var select, spinner, updated, manifest;
 
     // This changes every once in a while
     var selector = '#invoice_header > div.grid1of3.text-right'
@@ -25,7 +25,7 @@
 
     function loadManifest() {
         return new Promise(function(resolve, reject) {
-            return resolve(chrome.runtime.getManifest());
+            return resolve(manifest = chrome.runtime.getManifest());
         });
     }
 
@@ -64,7 +64,7 @@
         appendSelect(wrapper);
     }
 
-    function displayReadyMessage(manifest) {
+    function displayReadyMessage() {
         console.info(manifest.name, manifest.version, 'loaded');
     }
 
