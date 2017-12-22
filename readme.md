@@ -49,6 +49,7 @@ Hacky? You bet. Effective? Damn right. This was done in 3 hours late at night, s
 * [de-CH] Deutsche - German (Switzerland) thanks to [@mr-deamon](https://github.com/mr-deamon)
 * [es-ES] Español - Spanish (Spain)
 * [sv-SE] Svenska - Swedish (Sweden) thanks to [@calmh](https://github.com/calmh)
+* [pt-BR] Português - Portuguese (Brazil) thanks to [@renatonascalves](https://github.com/renatonascalves)
 
 ## Adding more languages
 
