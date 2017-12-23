@@ -11,18 +11,17 @@
     ///
 
     function init() {
-        loadLanguages()
+        top.loaded = loadLanguages()
             .then(insertUIElements)
             .catch(function(e) {
-                console.warn(manifest.name, manifest.version, e);
+                console.warn(manifest.name, manifest.version, 'Could not load languages', e);
             });
         loadManifest()
             .then(displayReadyMessage)
             .catch(function(e) {
-                console.warn(manifest.name, manifest.version, e);
+                console.warn(manifest.name, manifest.version, 'Could not display ready message', e);
             });
     }
-
     function loadManifest() {
         return new Promise(function(resolve, reject) {
             return resolve(manifest = chrome.runtime.getManifest());
@@ -31,13 +30,25 @@
 
     function loadLanguages() {
         return new Promise(function(resolve, reject) {
-            $.getJSON(chrome.extension.getURL('/languages.json'), resolve);
+            fetch(chrome.extension.getURL('/languages.json'))
+                .then(function(response) {
+                    response.json()
+                        .then(resolve)
+                        .catch(reject);
+                })
+                .catch(reject);
         });
     }
 
     function loadLanguage(locale) {
         return new Promise(function(resolve, reject) {
-            $.getJSON(chrome.extension.getURL('/languages/' + locale + '.json'), resolve);
+            fetch(chrome.extension.getURL('/languages/' + locale + '.json'))
+                .then(function(response) {
+                    response.json()
+                        .then(resolve)
+                        .catch(reject);
+                })
+                .catch(reject);
         });
     }
 
