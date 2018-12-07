@@ -4,7 +4,7 @@
     var select, spinner, updated, manifest;
 
     // This changes every once in a while
-    var selector = '#invoice_header div.grid1of3.text-right'
+    var selector = '#invoice_header div.grid1of3.text-right';
 
     init();
 
@@ -115,12 +115,12 @@
     }
 
     function getTranslationSettingsUrl(section) {
-        return 'https://' + location.hostname + '/' + section + '/configure?tab=translations';
+        return 'https://' + location.hostname + '/' + section + '/translations';
     }
 
     function changeValues(section, document, language) {
         _.forEach(language[section], function (value, key) {
-            var field = document.getElementById(key)
+            var field = document.getElementById(key);
 
             if (!field) {
                 return console.warn('Could not find field for translation. ' +
@@ -131,7 +131,7 @@
             field.value = value;
         });
 
-        $(document.getElementById("translation_edit")).find("form").submit();
+        document.querySelector("form#edit_profile").submit();
         updated = true;
     }
 
