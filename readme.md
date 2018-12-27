@@ -75,7 +75,8 @@ If you want to, you can add a new language yourself:
 You can also send in a Pull Request with the new language.
 
 ## Issues
-Please report any [issues](https://github.com/dimaslz/ChuckNorrisApprovedPullRequest/issues). New features and ideas that you'd like to see implemented will be welcome.
+Please report any [issues](https://github.com/orestes/harvest-languages/issues). New features and ideas that you'd like
+ to see implemented will be welcome.
 
 ## Contributing
 
