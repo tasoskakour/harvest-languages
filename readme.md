@@ -8,6 +8,10 @@ I love Harvest, but they're missing something  I need: multi-language invoices. 
 
 The result is this Google Chrome extension. You get a language selector that changes the translations and then reloads the invoice page for you.
 
+# 3.2 - December 2018
+
+- Add Dutch (Netherlands)
+
 # 3.1 - December 2018
 
 - Fixes to work on the latest version of Harvest
@@ -54,6 +58,7 @@ Hacky? You bet. Effective? Damn right. This was done in 3 hours late at night, s
 * [es-ES] Español - Spanish (Spain)
 * [sv-SE] Svenska - Swedish (Sweden) thanks to [@calmh](https://github.com/calmh)
 * [pt-BR] Português - Portuguese (Brazil) thanks to [@renatonascalves](https://github.com/renatonascalves)
+* [nl-NL] Dutch (Netherlands) thanks to [@Harjo](https://github.com/Harjo)
 
 ## Adding more languages
 

@@ -28,5 +28,10 @@
     "locale": "pt-BR",
     "localeName": "Português (Brasil)",
     "name": "Portuguese (Brazil)"
+  },
+  {
+    "locale": "nl-NL",
+    "localeName": "Dutch (Netherlands)",
+    "name": "Dutch (Netherlands)"
   }
 ]
