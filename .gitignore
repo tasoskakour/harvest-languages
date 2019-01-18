@@ -1,3 +1,5 @@
 *.zip
 build/better-harvest.crx
 build/better-harvest.pem
+ref.txt
+.gitignore
