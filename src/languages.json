@@ -25,6 +25,11 @@
     "name": "French (Switchzerland)"
   },
   {
+    "locale": "fr-QC",
+    "localeName": "Français (Quebéc)",
+    "name": "French (Quebec)"
+  },
+  {
     "locale": "pt-BR",
     "localeName": "Português (Brasil)",
     "name": "Portuguese (Brazil)"
