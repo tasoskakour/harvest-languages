@@ -43,7 +43,7 @@ Hacky? You bet. Effective? Damn right. This was done in 3 hours late at night, s
 * [sv-SE] Svenska - Swedish (Sweden) thanks to [@calmh](https://github.com/calmh)
 * [pt-BR] Português - Portuguese (Brazil) thanks to [@renatonascalves](https://github.com/renatonascalves)
 * [nl-NL] Dutch (Netherlands) thanks to [@Harjo](https://github.com/Harjo)
-* [fr-QC] French (Quebec) thanks to [@Baelx](https://github.com/Baelx)
+* [fr-CA] French (Canada/Quebec) thanks to [@Baelx](https://github.com/Baelx)
 
 ## Adding more languages
 

@@ -1,7 +1,7 @@
 {
-  "locale": "fr-QC",
-  "localeName": "Français (Québec)",
-  "name": "French (Quebec)",
+  "locale": "fr-CA",
+  "localeName": "Français (Canada/Québec)",
+  "name": "French (Canada/Quebec)",
   "invoices": {
     "profile_t_invoice": "Facture",
     "profile_t_from": "De",
